@@ -8,9 +8,6 @@
     --color-pink: #F77EC1;
     --color-yellow: #E3F087;
     --color-blue:#6DC7D8;
-
-    --font-size: 0.7vw;
-    --font-size-link: 0.9vw;
     
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -20,7 +17,6 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: var(--font-size);
 }
 
 body
@@ -47,8 +43,6 @@ header
 .links a
 {
     color: white;
-    font-size: var(--font-size-link);
-    line-height: calc(var(--font-size-link) + 0.1vw);
     margin: 0 16px;
     text-decoration: none;
 }
@@ -73,17 +67,9 @@ header
     margin-bottom: 32px;
 }
 
-#wrapper h1
-{
-    font-size: 30px;
-    line-height: 40px;
-}
-
 #wrapper h2
 {
-    font-size: var(--font-size-link);
     font-weight: lighter;
-    line-height: calc(var(--font-size-link) + 0.8vw);
     opacity: 0.8;
 }
 
@@ -91,7 +77,6 @@ header
 {
     max-width: 500px;
     margin: 5px auto;
-    font-size: var(--font-size-link);
 }
 
 #links-footer
@@ -115,20 +100,6 @@ header
 }
 
 /* Curriculum Page */
-
-.cv {
-    background-color: rgba(40, 42, 54, 0.4);
-    border-radius: 0.5rem;
-    width: 40rem;
-    height: 57.6rem;
-    margin: 1rem auto 1rem;
-    padding: 0.8rem;
-
-    font-family: 'Baloo Paaji 2' !important;
-    line-height: 1.2rem;
-
-    animation: up 1s ease-in-out;
-}
 
 .options {
     display: flex;
@@ -177,7 +148,19 @@ header
     color: var(--color-blue);
 }
 
-.tab { margin-left: 2em;}
+.cv {
+    background-color: rgba(40, 42, 54, 0.4);
+    border-radius: 0.5rem;
+    width: 40rem;
+    height: 57.6rem;
+    margin: 1rem auto 1rem;
+    padding: 0.8rem;
+
+    font-family: 'Baloo Paaji 2' !important;
+    line-height: 1.2rem;
+
+    animation: up 1s ease-in-out;
+}
 
 @keyframes up {
     from {
@@ -186,4 +169,74 @@ header
     } to {
         opacity: 1;
     }
+}
+
+@media screen and (min-width: 600px) {
+    * { 
+        font-size: 16px;
+    }
+
+    .links a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #wrapper h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #wrapper h2 {
+        font-size: 22px;
+        font-weight: lighter;
+        line-height: 32px;
+    }
+
+    #wrapper p
+    {
+        max-width: 500px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    .tab { margin-left: 2em;}
+}
+
+@media screen and (max-width: 600px) {
+    body { 
+        font-size: 16px;
+    }
+
+    .links a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #wrapper h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #wrapper h2 {
+        font-size: 22px;
+        font-weight: lighter;
+        line-height: 32px;
+    }
+
+    #wrapper p
+    {
+        max-width: 500px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .cv {
+        width: 20rem;
+        height: fit-content;
+    
+        animation: up 1s ease-in-out;
+        font-size: 13px;
+    }
+
+    .tab { margin-left: 1rem;}
 }
