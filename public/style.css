@@ -8,6 +8,9 @@
     --color-pink: #F77EC1;
     --color-yellow: #E3F087;
     --color-blue:#6DC7D8;
+
+    --font-size: 0.7vw;
+    --font-size-link: 0.9vw;
     
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -17,7 +20,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 16px;
+    font-size: var(--font-size);
 }
 
 body
@@ -44,8 +47,8 @@ header
 .links a
 {
     color: white;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: var(--font-size-link);
+    line-height: calc(var(--font-size-link) + 0.1vw);
     margin: 0 16px;
     text-decoration: none;
 }
@@ -78,9 +81,9 @@ header
 
 #wrapper h2
 {
-    font-size: 22px;
+    font-size: var(--font-size-link);
     font-weight: lighter;
-    line-height: 40px;
+    line-height: calc(var(--font-size-link) + 0.8vw);
     opacity: 0.8;
 }
 
@@ -88,7 +91,7 @@ header
 {
     max-width: 500px;
     margin: 5px auto;
-    font-size: 17px;
+    font-size: var(--font-size-link);
 }
 
 #links-footer
